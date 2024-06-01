@@ -18,13 +18,14 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import fr.epf.min1.aroundtheworld2.ui.theme.AroundTheWorld2Theme
+import fr.epf.min1.aroundtheworld2.ui.theme.MyTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AroundTheWorld2Theme {
+            MyTheme {
                 val navController = rememberNavController()
                 Scaffold(
                     bottomBar = { BottomNavigationBar(navController) }
